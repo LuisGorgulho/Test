@@ -40,9 +40,4 @@
     <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.2.301" />
   </ItemGroup>
 
-  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
-    <Exec Command="bower install" />
-    <Exec Command="dotnet bundle" />
-  </Target>
-
 </Project>
